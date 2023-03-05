@@ -1,0 +1,19 @@
+{
+  "name": "cli-application",
+  "version": "1.0.0",
+  "description": "NODE.js application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "author": "UMolska",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "yargs": "^17.7.1"
+  }
+}
