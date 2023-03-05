@@ -4,7 +4,6 @@ const fs = require("fs").promises;
 //import path
 const path = require("path");
 const contacts = require("./db/contacts.json");
-
 const contactsPath = path.join(__dirname, "db", "contacts.json");
 
 //Function ListContacts
@@ -62,7 +61,6 @@ async function removeContact(contactId) {
 async function addContact(name, email, phone) {
   const lastId = await checkNumberOfContacts();
   const actualParsedContactsJsonFile = await GetContacts()();
-
   const nextId = String(lastId + 1);
 
   const contact = {
